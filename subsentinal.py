@@ -2350,7 +2350,10 @@ class ReportGenerator:
         <h4>🔍 Detailed Analysis — {html.escape(finding.subdomain)}</h4>
         <p><strong>CNAME Chain:</strong> {html.escape(' → '.join(finding.cname_chain) if finding.cname_chain else 'None')}</p>
         <p><strong>A Records:</strong> {html.escape(', '.join(finding.a_records) if finding.a_records else 'None')}</p>
+        <p><strong>NS Records:</strong> {html.escape(', '.join(finding.ns_records) if finding.ns_records else 'None')}</p>
         <p><strong>HTTP Status:</strong> {finding.http_status or 'N/A'} | <strong>HTTPS Status:</strong> {finding.https_status or 'N/A'}</p>
+        <p><strong>SSL Cert CN:</strong> {html.escape(finding.ssl_cert_cn or 'N/A')}</p>
+        <p><strong>Header Fingerprint:</strong> {html.escape(finding.header_fingerprint or 'None')}</p>
         <p><strong>Page Title:</strong> {html.escape(finding.page_title or 'N/A')}</p>
         <p><strong>Response Time:</strong> {f"{finding.response_time:.2f}s" if finding.response_time is not None else 'N/A'}</p>
         <p><strong>Final URL:</strong> <a href="{html.escape(finding.final_url or '#')}" target="_blank">{html.escape(finding.final_url or 'N/A')}</a></p>
