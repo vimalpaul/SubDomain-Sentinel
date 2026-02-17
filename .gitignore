@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Scan outputs (don't commit scan results)
+sentinel_*.html
+sentinel_*.json
+sentinel_*.csv
+sentinel_*.md
+*.html
+*.json
+!package.json
+
+# Logs
+*.log
