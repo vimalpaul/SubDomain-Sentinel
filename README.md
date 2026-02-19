@@ -17,7 +17,7 @@
 
 ---
 
-## 🚀 Why SubDomain Sentinel?
+##  Why SubDomain Sentinel?
 
 Most subdomain takeover tools only check for dangling CNAMEs. **SubDomain Sentinel** goes far beyond that:
 
@@ -39,7 +39,7 @@ Most subdomain takeover tools only check for dangling CNAMEs. **SubDomain Sentin
 
 ---
 
-## 🎯 Detection Vectors
+##  Detection Vectors
 
 ```
 ┌──────────────────────────────────────────────────────────────┐
@@ -78,7 +78,7 @@ Most subdomain takeover tools only check for dangling CNAMEs. **SubDomain Sentin
 
 ---
 
-## 📦 Installation
+##  Installation
 
 ### Prerequisites
 - Python 3.7+
@@ -116,7 +116,7 @@ sudo apt install subfinder
 
 ---
 
-## 🔧 Usage
+##  Usage
 
 ### Basic Scan
 
@@ -175,7 +175,7 @@ python3 subsentinal.py target.com --single-subdomain suspicious.target.com --deb
 
 ---
 
-## 📋 All CLI Options
+##  All CLI Options
 
 ```
 usage: subsentinal.py [-h] [--single-subdomain SINGLE_SUBDOMAIN]
@@ -217,7 +217,7 @@ usage: subsentinal.py [-h] [--single-subdomain SINGLE_SUBDOMAIN]
 
 ---
 
-## 🏢 Supported Providers (35+)
+##  Supported Providers (35+)
 
 <details>
 <summary>Click to expand full provider list</summary>
@@ -264,16 +264,16 @@ usage: subsentinal.py [-h] [--single-subdomain SINGLE_SUBDOMAIN]
 
 ---
 
-## 📊 Report Formats
+##  Report Formats
 
 ### Interactive HTML Report
-- 🌙 Dark-mode themed design
-- 🔍 Real-time search and filter
-- 📊 Sort by confidence, status, or risk
-- 📈 Confidence bar visualization
-- 🎨 Color-coded evidence (NXDOMAIN = red, Wildcard = amber)
-- 💡 Click-to-expand details panel
-- 🚫 Zero CDN dependencies (no jQuery)
+-  Dark-mode themed design
+-  Real-time search and filter
+-  Sort by confidence, status, or risk
+-  Confidence bar visualization
+-   Color-coded evidence (NXDOMAIN = red, Wildcard = amber)
+-   Click-to-expand details panel
+-  Zero CDN dependencies (no jQuery)
 
 ### JSON Report
 Machine-readable output with full finding details, including all evidence and verification steps.
@@ -321,7 +321,7 @@ graph TD
 
 ---
 
-## 🛡️ Anti-False-Positive Mechanisms
+##  Anti-False-Positive Mechanisms
 
 1. **Wildcard DNS Detection** — Automatically detects wildcard DNS and reduces confidence by 20 points
 2. **`can_takeover` Validation** — Providers like Cloudflare that don't allow arbitrary domain claiming are capped at 30% confidence
@@ -359,7 +359,7 @@ graph TD
 
 ---
 
-## ⚠️ Legal Disclaimer
+##  Legal Disclaimer
 
 **This tool is intended for authorized security testing only.** Always ensure you have proper authorization before scanning any domain. Unauthorized scanning may violate computer crime laws in your jurisdiction.
 
@@ -369,35 +369,13 @@ graph TD
 - ❌ Never use on domains without permission
 
 ---
-
-## 🤝 Contributing
-
-Contributions are welcome! Here's how you can help:
-
-1. **Fork** the repository
-2. **Create** a feature branch (`git checkout -b feature/amazing-feature`)
-3. **Commit** your changes (`git commit -m 'Add amazing feature'`)
-4. **Push** to the branch (`git push origin feature/amazing-feature`)
-5. **Open** a Pull Request
-
-### Ideas for Contribution
-- Add more provider fingerprints
-- Improve SSL mismatch detection
-- Add WHOIS expiry checking
-- Add Slack/Discord webhook notifications
-- CI/CD integration examples
-
 ---
 
-## 📜 License
+##  License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
-
-## ⭐ Star History
-
-If this tool helped you find a vulnerability, please give it a ⭐!
 
 ---
 
