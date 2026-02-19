@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-SubDomain Sentinel v4.1 - Complete Enterprise Subdomain Takeover Scanner
+SubDomain Sentinel v5.1.0 - Complete Enterprise Subdomain Takeover Scanner
 ================================================================
 FULL UPGRADED VERSION WITH ALL FIXES:
 - httpx integration for better HTTP analysis
@@ -12,7 +12,7 @@ FULL UPGRADED VERSION WITH ALL FIXES:
 - Brute-force enumeration option
 - Fixed NoneType formatting bug
 
-Author: Security Research Team
+Author: Vimal T
 License: MIT
 """
 
@@ -83,7 +83,7 @@ VERSION = "5.1.0"  # Advanced takeover detection: NS delegation, SSL mismatch, h
 AUTHOR = "Vimal T"
 BANNER = f"""
 ╔══════════════════════════════════════════════════════════════╗
-║                      SubDomain Sentinel v{VERSION}                    ║
+║                      SubDomain Sentinel v{5.1.0}                    ║
 ║           Enterprise Subdomain Takeover Scanner                    ║
 ╚══════════════════════════════════════════════════════════════╝
 """
